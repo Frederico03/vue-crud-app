@@ -6,7 +6,7 @@ export class Api {
   static getInstance(): AxiosInstance {
     if (!this.instance) {
       this.instance = axios.create({
-        baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000',
+        baseURL: import.meta.env.VITE_API_URL || 'https://laravel-crud-api-main-i06bg9.laravel.cloud',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
